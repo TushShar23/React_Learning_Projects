@@ -3,7 +3,7 @@ import '../src/App.css'
 function Navbar(){
     return(
         <div className="Navbar">
-            <img src="../src/assets/nike-bgremove.png" alt="logo" style={{height:"120px"}}/>
+            <img src="../src/assets/nike-bgremove.png" alt="logo" style={{height:"8rem"}}/>
 
             <div className="links">
                 <li><a href="">MENU</a></li>
