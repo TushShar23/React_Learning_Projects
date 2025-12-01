@@ -72,6 +72,7 @@
   padding: 0.5rem 1rem;
   display: flex;
   flex-direction: column;
+  /* text-align: center; */
 }
 
 .leftbox h1{
@@ -79,6 +80,7 @@
   line-height: 6.2rem;
   text-transform: uppercase;
   font-weight: 1000;
+  /* text-align: center; */
   /* border: 2px solid gray; */
   /* width: 100%; */
 }
