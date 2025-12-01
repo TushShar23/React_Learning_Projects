@@ -14,13 +14,13 @@ function MainContent(){
                 </div>
                 <div className="sellers">
                     <p>Also Available On:</p>
-                    <img src="../src/assets/flipkart.png" alt="logo"  style={{height:"50px"}}/>
-                    <img src="../src/assets/amazon.png" alt="logo"  style={{height:"50px"}}/>
+                    <img src="/images/flipkart.png" alt="logo"  style={{height:"50px"}}/>
+                    <img src="/images/amazon.png" alt="logo"  style={{height:"50px"}}/>
                 </div>
 
             </div>
             <div className="rightbox">
-                <img src="../src/assets/heroimg.png" alt="" />
+                <img src="/images/heroimg.png" alt="Main hero image" />
             </div>
         </div>
     )

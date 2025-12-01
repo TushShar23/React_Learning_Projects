@@ -59,7 +59,7 @@
   width: 80%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   /* border: 2px solid green; */
   padding: 0.4rem 0.8rem;
 }
@@ -103,6 +103,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border:2px solid green; */
 }
 .rightbox img{
   height: 40rem;
@@ -164,7 +165,8 @@
   }
   .main{
     flex-direction: column;
-    height: fit-content;
+    height: 100%;
+    gap: 8rem;
   }
   .leftbox{
     width: 100%;
