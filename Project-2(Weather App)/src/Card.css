@@ -1,11 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+   box-sizing: border-box;
+   font-family: Inter;
+   margin: 0;
+   padding: 0;
+}
+
 .main_cont{
+   /* position: relative; */
    height: 600px;
    width: 500px;
-   background-color: rgba(255, 255, 255, 0.362);
+   background-color: #2b3b5492;
    border-radius: 40px;
+   padding: 2rem 1rem;
 
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: center;
+   justify-content: space-between;
+   /* gap: 20rem; */
 }
+h1{
+   /* margin-top: -8px; */
+   font-size: 42px;
+   color:  #182233;
+}
+
+.main_data{
+   /* position:absolute; */
+   height: auto;
+   width: 70%;
+   /* border: 2px solid black; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content:flex-start;
+   gap: 10px;
+   padding: 1rem 0;
+}
+
+.inputsearch{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   /* border: 2px solid black; */
+   padding: 0.2rem 0.2rem;
+}
+
+.inputsearch input {
+   height: 40px;
+   width: 250px;
+   border-radius: 10px;
+   border: none;
+   font-size: 18px;
+   padding: 0rem 0.5rem;
+}
+.inputsearch button{
+   background-color: #222121;
+   color:white;
+   height: 35px;
+   width: 75px;
+   font-size: 18px;
+   border:none;
+   border-radius: 10px;
+}
+.inputsearch button:hover{
+   background-color:#000000;
+   color:white;
+}
+
+.DateInfo{
+   font-size: 30px;
+   font-weight: bold;
+   color: rgb(255, 255, 255);
+   /* stroke: #000000; */
+}
+.tempData{
+   font-size: 18px;
+   font-weight: bold;
+}
+
+/* p{
+   border: 2px solid black;
+}
+.main_data img{
+   border: 2px solid black;
+} */
