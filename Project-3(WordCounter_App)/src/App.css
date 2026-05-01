@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900');
+  
+  *
+  {
+    margin: 0;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: #F3F3F3;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  body {
+    min-height: 100vh;
+    background: url('data:image/svg+xml;utf8,'),
+      hsl(210, 90%, 45%);
+    background-size: 50px;
+    font-family: "Mukta", sans-serif;
+  }
+  
