@@ -62,8 +62,11 @@ body {
   /* border-inline: 1px solid var(--border); */
   min-height: 100svh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
+  padding:1rem 1rem;
+
 }
 
 h1,

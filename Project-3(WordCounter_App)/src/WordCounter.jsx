@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
+import "./WordCounter.css"
 
 
 const WordCounter = () => {
@@ -6,13 +7,24 @@ const WordCounter = () => {
   const [charCount,setCharCount] = useState(0);
   const [sentenceCount,setSentenceCount] = useState(0);
   
-  
+  console.log(textArea)
+
+  const deleteContent = ()=>{
+      setTextArea("")
+  }
+
+
+
+
   return (
+
+
     <div className='main_Container'>
         <div className="left">
-            <textarea className='text-input' id="myinput" placeholder='Type or paste your text here...' rows={6}  ></textarea>
+            <textarea className='text-input' id="myinput" placeholder='Type or paste your text here...' rows={6} value={textArea} onChange={(e)=>{setTextArea(e.target.value)}}/>
 
-            <button id='delete' className='button-65'>Delete</button>
+            <button id='delete' className='button-65' onClick={deleteContent}>Delete</button>
+            
         </div>
 
         <div className="right">
