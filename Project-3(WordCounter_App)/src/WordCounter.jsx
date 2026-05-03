@@ -16,13 +16,11 @@ const WordCounter = () => {
   useEffect(()=>{
     const charArr = textArea.trim().split("")
     setCharCount(charArr.length)
-    let count = 0;
-    for(let i =0;i<charArr.length;i++){
-        if(charArr[i]==="." || charArr[i]==="!" || charArr[i]==="?"){
-            count++;
-        }
-    }
-    setSentenceCount(count)
+    let senCount = textArea.replace(/\b([A-Z]\.)+/g,"")
+                   .split(/[.!?]+/).filter((s)=>(s.trim().length > 0))
+    // its a regex(REGULAR EXPRESSION,which denotes that replace all the patterns like U.S.A with "" + = repeat ,g = globally, and then split the whole string into an array using [!.?]mtlb jaha ye dikhe waha pe split kardo and then filter kardo woh strings jinki length > 0 hai )
+    
+    setSentenceCount(senCount.length)
 
     },[textArea])
 
