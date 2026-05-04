@@ -57,3 +57,35 @@ const WordCounter = () => {
 }
 
 export default WordCounter
+
+
+/*
+
+s.trim().length > 0
+It’s a condition (true/false check)
+
+"Keep only those strings that are NOT empty (after removing spaces)"
+
+
+\b        → word boundary (start of word)
+([A-Z]\.) → capital letter followed by dot (U.)
++         → repeat (U.S.A.)
+g         → global (check entire text)
+
+
+
+
+Original text
+   ↓
+Remove U.S.A.-type patterns
+   ↓
+Split using . ! ?
+   ↓
+Remove empty pieces
+   ↓
+Count remaining parts
+
+
+// {value} attribute stores the STATE which we need to update using the particular element and {OnChange} is the Updator function.Its like useState()
+
+*/
